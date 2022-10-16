@@ -114,7 +114,7 @@ app.post('/', (req, res) => {
     updated_at: null,
     deleted_at: null,
   };
-
+  tmp = ""
   data.push(memo);
 
   res.json(memo);
