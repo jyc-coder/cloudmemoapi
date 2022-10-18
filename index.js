@@ -72,7 +72,7 @@ app.delete('/', (req, res) => {
   for (const memo of data) {
     if (memo.deleted_at === null) {
         memo.deleted_at = Date.now();
-        list.plush(memo)
+        list.push(memo)
     }
   }
   
